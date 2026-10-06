@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "17 18 * * *"   # daily, 18:17 UTC; cheap because only NEW episodes are fetched
   workflow_dispatch:         # lets you run it by hand from the Actions tab
+  push:                      # also rebuild right after you add/edit a tracklist
+    paths:
+      - "tracklists/**"
+      - "gen_feed.py"
 
 permissions:
   contents: write
