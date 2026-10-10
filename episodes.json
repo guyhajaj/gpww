@@ -470,5 +470,13 @@
     "page_url": "https://gpww.differentdrum.ca/2026/10/03/october-3rd/",
     "title": "October 3rd",
     "type": "audio/mpeg"
+  },
+  "/2026/10/10/october-10th/": {
+    "date": "2026-10-10",
+    "length": 142479832,
+    "mp3": "https://worldwide.differentdrum.ca/261010-Gilles_Peterson-BBC6music.mp3",
+    "page_url": "https://gpww.differentdrum.ca/2026/10/10/october-10th/",
+    "title": "October 10th",
+    "type": "audio/mpeg"
   }
 }
