@@ -2,7 +2,8 @@ name: Update RSS feed
 
 on:
   schedule:
-    - cron: "30 19 * * 6"   # every Saturday at 19:30 UTC
+    - cron: "0 19 * * 6"    # every Saturday at 19:00 UTC
+    - cron: "0 20 * * 6"    # every Saturday at 20:00 UTC
   workflow_dispatch:         # lets you run it by hand from the Actions tab
   push:                      # also rebuild right after you add/edit a tracklist
     paths:
