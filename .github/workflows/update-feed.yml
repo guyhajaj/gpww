@@ -2,8 +2,9 @@ name: Update RSS feed
 
 on:
   schedule:
-    - cron: "0 19 * * 6"    # every Saturday at 19:00 UTC
-    - cron: "0 20 * * 6"    # every Saturday at 20:00 UTC
+    # Saturdays only: every 30 min from 18:00 to 23:30 UTC. Once that day's episode is
+    # in the feed, the remaining runs exit immediately (see STOP_IF_TODAY_PRESENT below).
+    - cron: "0,30 18-23 * * 6"
   workflow_dispatch:         # lets you run it by hand from the Actions tab
   push:                      # also rebuild right after you add/edit a tracklist
     paths:
@@ -27,6 +28,7 @@ jobs:
         run: python gen_feed.py
         env:
           FEED_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/feed.xml
+          STOP_IF_TODAY_PRESENT: ${{ github.event_name == 'schedule' }}
 
       - name: Commit changes
         run: |

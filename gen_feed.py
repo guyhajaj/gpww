@@ -147,6 +147,14 @@ def build_feed(episodes):
 def main():
     cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
+    # Scheduled Saturday runs set STOP_IF_TODAY_PRESENT=true: once today's episode is
+    # already in the feed there is nothing left to wait for, so exit without touching the site.
+    if os.environ.get("STOP_IF_TODAY_PRESENT", "").lower() == "true":
+        today = datetime.now(timezone.utc).date().isoformat()
+        if any(e["date"] == today for e in cache.values()):
+            print(f"Today's episode ({today}) is already in the feed - nothing to do this week")
+            return
+
     body, _ = fetch(SITE + "/")  # if this fails the run fails, so you get a notification
     found = parse_index(body.decode("utf-8", "replace"))
     if not found:
