@@ -10,7 +10,16 @@
     <itunes:image href="https://gpww.differentdrum.ca/assets/images/gilles-peterson-bbc6music-sqr-bw-dithered-pixel2.jpg" />
     <itunes:category text="Music" />
     <itunes:explicit>false</itunes:explicit>
-    <lastBuildDate>Sat, 31 Oct 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>2026-11-07 - November 7th</title>
+      <link>https://gpww.differentdrum.ca/2026/11/07/november-7th/</link>
+      <guid isPermaLink="true">https://gpww.differentdrum.ca/2026/11/07/november-7th/</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Gilles Peterson Worldwide, BBC 6 Music - broadcast 2026-11-07.&lt;/p&gt;</description>
+      <enclosure url="https://worldwide.differentdrum.ca/261107-Gilles_Peterson-BBC6music.mp3" length="141880024" type="audio/mpeg" />
+      <itunes:image href="https://gpww.differentdrum.ca/assets/images/gilles-peterson-bbc6music-sqr-bw-dithered-pixel2.jpg" />
+    </item>
     <item>
       <title>2026-10-31 - October 31st</title>
       <link>https://gpww.differentdrum.ca/2026/10/31/october-31st/</link>
