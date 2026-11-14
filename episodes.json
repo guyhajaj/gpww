@@ -510,5 +510,13 @@
     "page_url": "https://gpww.differentdrum.ca/2026/11/07/november-7th/",
     "title": "November 7th",
     "type": "audio/mpeg"
+  },
+  "/2026/11/14/november-14th/": {
+    "date": "2026-11-14",
+    "length": 142684097,
+    "mp3": "https://worldwide.differentdrum.ca/261114-Gilles_Peterson-BBC6music.mp3",
+    "page_url": "https://gpww.differentdrum.ca/2026/11/14/november-14th/",
+    "title": "November 14th",
+    "type": "audio/mpeg"
   }
 }
